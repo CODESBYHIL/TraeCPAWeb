@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import styles from './Navbar.module.css';
 
 const Navbar = () => {
@@ -7,9 +8,9 @@ const Navbar = () => {
   return (
     <nav className={styles.navbar}>
       <div className={styles.container}>
-        <a href="/" className={styles.logo}>
-          <span className={styles.companyName}>Kehl CPA</span>
-        </a>
+        <Link to="/" className={styles.logo}>
+          <span className={styles.companyName}>Tracy Sun CPA</span>
+        </Link>
 
         <button
           className={styles.menuButton}
@@ -30,9 +31,9 @@ const Navbar = () => {
         </button>
 
         <div className={`${styles.menuItems} ${isMenuOpen ? styles.isOpen : ''}`}>
-          <a href="#services" className={styles.menuLink}>Services</a>
-          <a href="#about" className={styles.menuLink}>About</a>
-          <a href="#contact" className={styles.menuLink}>Contact</a>
+          <Link to="/services" className={styles.menuLink}>Services</Link>
+          <Link to="/about" className={styles.menuLink}>About</Link>
+          <Link to="/contact" className={styles.menuLink}>Contact</Link>
         </div>
       </div>
     </nav>
