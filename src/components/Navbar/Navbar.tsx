@@ -9,7 +9,7 @@ const Navbar = () => {
     <nav className={styles.navbar}>
       <div className={styles.container}>
         <Link to="/" className={styles.logo}>
-          <span className={styles.companyName}>Tracy Sun CPA</span>
+          <span className={styles.companyName}>Trae CPA</span>
         </Link>
 
         <button

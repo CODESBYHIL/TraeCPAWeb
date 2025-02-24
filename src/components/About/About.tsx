@@ -22,7 +22,7 @@ const About = () => {
           <div className={styles.text}>
             <h3>Professional Expertise You Can Trust</h3>
             <p>
-              At Tracy Sun CPA, we understand that every client has unique financial needs. Our team of experienced professionals is dedicated to providing personalized solutions that help you achieve your financial goals.
+              At Trae CPA, we understand that every client has unique financial needs. Our team of experienced professionals is dedicated to providing personalized solutions that help you achieve your financial goals.
             </p>
             <p>
               With extensive experience in tax planning, accounting, and business advisory services, we work closely with individuals and businesses to ensure compliance while maximizing financial opportunities.
