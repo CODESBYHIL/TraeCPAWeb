@@ -8,7 +8,7 @@ const Hero = () => {
           Professional Tax & Accounting Services
         </h1>
         <p className={styles.subtitle}>
-          Expert financial guidance for individuals and businesses in the greater Seattle area
+          Expert financial guidance for individuals and businesses in the Bay Area
         </p>
         <div className={styles.cta}>
           <a href="#contact" className={styles.primaryButton}>
