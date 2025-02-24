@@ -1,0 +1,125 @@
+.hero {
+  background-color: #f7fafc;
+  padding: 8rem 0 6rem;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 2rem;
+}
+
+.title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: #1a202c;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  color: #4a5568;
+  margin-bottom: 3rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.primaryButton {
+  background-color: #2b6cb0;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.primaryButton:hover {
+  background-color: #2c5282;
+}
+
+.secondaryButton {
+  background-color: white;
+  color: #2b6cb0;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  border: 2px solid #2b6cb0;
+  transition: all 0.2s ease;
+}
+
+.secondaryButton:hover {
+  background-color: #ebf8ff;
+}
+
+@media (max-width: 1024px) {
+  .hero {
+    padding: 7rem 0 5rem;
+  }
+
+  .title {
+    font-size: 3rem;
+  }
+
+  .subtitle {
+    font-size: 1.35rem;
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 6rem 0 4rem;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .subtitle {
+    font-size: 1.25rem;
+    max-width: 100%;
+  }
+
+  .cta {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .primaryButton,
+  .secondaryButton {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 5rem 0 3rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1.1rem;
+  }
+}
