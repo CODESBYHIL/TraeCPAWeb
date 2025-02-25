@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/TraeCPAWeb/', 
+  base: '/CPAWeb/',  // Changed from '/TraeCPAWeb/' to match router basename
   plugins: [react()],
   build: {
     rollupOptions: {
