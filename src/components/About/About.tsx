@@ -14,7 +14,7 @@ const About = () => {
         <div className={styles.content}>
           <div className={styles.imageContainer}>
             <img
-              src="/images/office.jpg"
+              src="./images/office.jpg"
               alt="Our office"
               className={styles.image}
             />
