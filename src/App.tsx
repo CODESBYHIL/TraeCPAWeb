@@ -8,7 +8,7 @@ import styles from './App.module.css';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/CPAWeb">
       <div className={styles.root}>
         <Navbar />
         <Routes>
