@@ -1,7 +1,6 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// https://vite.dev/config/
 export default defineConfig({
   base: '/TraeCPAWeb/', // Updated to match your actual repo name
   plugins: [react()],
@@ -10,8 +9,9 @@ export default defineConfig({
     assetsDir: 'assets',
     rollupOptions: {
       output: {
-        entryFileNames: `assets/[name].[hash].js`,
-        chunkFileNames: `assets/[name].[hash].js`,
+        manualChunks: undefined,
+        entryFileNames: `assets/[name].[hash].mjs`,
+        chunkFileNames: `assets/[name].[hash].mjs`,
         assetFileNames: `assets/[name].[hash].[ext]`
       }
     }
