@@ -5,19 +5,13 @@ export default defineConfig({
   base: '/TraeCPAWeb/',
   plugins: [react()],
   build: {
-    target: 'esnext',
-    minify: 'esbuild',
     outDir: 'dist',
     assetsDir: 'assets',
     rollupOptions: {
-      input: {
-        main: '/Users/chrispeng/Desktop/VibCode/CPAWeb/index.html'
-      },
       output: {
-        format: 'es',
-        generatedCode: 'es2015',
-        entryFileNames: 'assets/[name].[hash].js',
-        chunkFileNames: 'assets/[name].[hash].js',
+        manualChunks: undefined,
+        entryFileNames: 'assets/[name].[hash].mjs',
+        chunkFileNames: 'assets/[name].[hash].mjs',
         assetFileNames: 'assets/[name].[hash].[ext]'
       }
     }
