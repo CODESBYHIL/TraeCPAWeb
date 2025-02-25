@@ -8,7 +8,7 @@ export default defineConfig({
     outDir: 'dist',
     emptyOutDir: true,
     rollupOptions: {
-      input: '/Users/chrispeng/Desktop/VibCode/CPAWeb/index.html'
+      input: './index.html'
     }
   }
 })
