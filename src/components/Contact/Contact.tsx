@@ -9,6 +9,7 @@ const Contact = () => {
     message: ''
   });
 
+  // State for form submission
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
 
@@ -123,9 +124,20 @@ const Contact = () => {
                 />
               </div>
 
-              <button type="submit" className={styles.submitButton}>
-                Send Message
+              <button 
+                type="submit" 
+                className={styles.submitButton}
+                disabled={isSubmitting}
+              >
+                {isSubmitting ? 'Sending...' : 'Send Message'}
               </button>
+
+              {submitStatus === 'success' && (
+                <p className={styles.successMessage}>Message sent successfully!</p>
+              )}
+              {submitStatus === 'error' && (
+                <p className={styles.errorMessage}>Failed to send message. Please try again.</p>
+              )}
             </form>
           </div>
         </div>

@@ -116,3 +116,12 @@
     grid-template-columns: 1fr;
   }
 }
+.successMessage {
+  color: #4caf50;
+  margin-top: 1rem;
+}
+
+.errorMessage {
+  color: #f44336;
+  margin-top: 1rem;
+}
