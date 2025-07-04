@@ -17,6 +17,7 @@
 
     /* Linting */
     "strict": true,
+    "types": ["vite/client", "react", "react-dom"],
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
